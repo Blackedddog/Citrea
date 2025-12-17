@@ -1,0 +1,27 @@
+import Marquee from "@/components/citrea/Marquee";
+import SideNav from "@/components/citrea/SideNav";
+import Hero from "@/components/citrea/Hero";
+import LearnSection from "@/components/citrea/LearnSection";
+import Quiz from "@/components/citrea/Quiz";
+import Footer from "@/components/citrea/Footer";
+
+const sections = [
+  { id: "hero", label: "Home" },
+  { id: "learn", label: "Learn" },
+  { id: "quiz", label: "Quiz" },
+];
+
+const Index = () => {
+  return (
+    <main className="min-h-screen bg-background">
+      <Marquee />
+      <SideNav sections={sections} />
+      <Hero />
+      <LearnSection />
+      <Quiz />
+      <Footer />
+    </main>
+  );
+};
+
+export default Index;
